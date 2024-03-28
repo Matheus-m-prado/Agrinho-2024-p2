@@ -32,8 +32,6 @@ let migracao = document.getElementById('ptext');
 let start = document.getElementById('text');
 let start2 = document.getElementById('textp');
 
-
-// dando animação as imagens ao scrollar a tela
 window.addEventListener('scroll', () => {
     let scroll = window.scrollY;
 

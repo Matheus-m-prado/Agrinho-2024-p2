@@ -211,4 +211,10 @@ header{
 	.hero-content h1{
 		font-size: 3.5rem;
 	}
+	#text{
+		margin-top: 200px;
+	}
+	#textp{
+		margin-top: 150px;
+	}
 }
