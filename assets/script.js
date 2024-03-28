@@ -15,11 +15,16 @@ toggleBtn.onclick = function(){
 
 
 // PARALLAX
-let text = document.getElementById('ptext');
+let migracao = document.getElementById('ptext');
+let start = document.getElementById('text');
+let start2 = document.getElementById('textp');
+
 
 // dando animação as imagens ao scrollar a tela
 window.addEventListener('scroll', () => {
     let scroll = window.scrollY;
 
-    text.style.marginLeft = scroll * -.3 + 'px';
+    migracao.style.marginLeft = scroll * -.3 + 'px';
+		start.style.marginTop = scroll * .4 + 'px';
+		start2.style.marginTop = scroll * .4 + 'px';
 });

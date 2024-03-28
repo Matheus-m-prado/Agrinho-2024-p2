@@ -125,13 +125,13 @@ header{
   position: absolute;
   text-align: center;
   margin-bottom: 40vh;
-  font-size: 6em;
+  font-size: 6rem;
   color: #303030;
   transition: all 0.1s ease;
-  z-index: 100;
 	font-family: "Libre Baskerville", serif;
 	user-select: none;
 	text-wrap: nowrap;
+	z-index: 1;
 }
 .hero p {
   font-size: 1.2+rem;
@@ -145,6 +145,7 @@ header{
   position: absolute;
   bottom: 0;
   width: 100%;
+	z-index: 2;
 }
 
 #parallax{
