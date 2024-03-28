@@ -12,6 +12,19 @@ toggleBtn.onclick = function(){
 	: 'fa-solid fa-bars'
 }
 
+window.addEventListener('scroll', function(){
+	const navbar = document.getElementById('navbar');
+	let scroll = window.scrollY;
+	if(scroll >= 10){
+		navbar.style.backdropFilter = 'blur(100px)';
+		navbar.style.marginTop = '10px';
+		navbar.style.padding = '0 20px';
+	}else{
+		navbar.style.backdropFilter = 'blur(0px)';
+		navbar.style.marginTop = '0px';
+		navbar.style.padding = '0';
+	}
+});
 
 
 // PARALLAX
