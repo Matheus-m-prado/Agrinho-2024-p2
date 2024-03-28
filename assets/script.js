@@ -9,5 +9,5 @@ toggleBtn.onclick = function(){
 
 	toggle.classList = isOpen
 	? 'fa-solid fa-xmark'
-	: 'fa-solid fa-bars';
+	: 'fa-solid fa-bars'
 }

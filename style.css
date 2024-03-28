@@ -26,7 +26,7 @@ header{
 	position: relative;
 	padding: 0 2rem;
 	z-index: 100000;
-	user-select:none
+	user-select: none;
 }
 .navbar{
 	position: absolute;
@@ -130,9 +130,10 @@ header{
   z-index: 100;
 	font-family: "Libre Baskerville", serif;
 	user-select: none;
+	text-wrap: nowrap;
 }
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.2+rem;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: light;
 	letter-spacing: 2px;
@@ -168,6 +169,16 @@ header{
 	.hero-content h1{
 		font-size: 4rem;
 		line-height: 60px;
+	}
+	#text{
+		font-size: 4rem;
+		margin-top: 150px;
+	}
+	.hero p{
+		margin-top: 100px;
+	}
+	.hero{
+		height: 100vh;
 	}
 }
 
