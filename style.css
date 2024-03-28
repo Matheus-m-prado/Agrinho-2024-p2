@@ -171,7 +171,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	margin-top: 125px;
+	padding: 125px 40px;
 	color: #303030;
 }
 #start h1{
@@ -181,24 +181,25 @@ header{
 	letter-spacing: -3px;
 }
 #start p{
-	margin-top: 25px;
+	/* margin-top: 25px; */
+	padding: 3vh 0;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2rem;
-	width: 150%;
+	width: 180%;
 }
 
 #start a.btn1{
-	padding: 25px 60px;
+	padding: 4vh 5.5vw;
 	border-radius: 10px;
-	margin-top: 40px;
 	font-weight: bold;
 	letter-spacing: 1px;
 	background-color: #303030;
 	transition: all .3s ease;
+	text-wrap: nowrap;
 }
 #start a.btn1:hover{
 	background-color: #505050;
-	padding: 30px 65px;
+	scale: 1.1;
 	border-radius: 20px;
 }
 
@@ -238,6 +239,29 @@ header{
 	#parallax #ptext{
 		font-size: 4rem;
 	}
+
+	#start{
+		width: 40%;
+		padding: 60px 0px;
+	}
+	#start h1{
+		font-size: 2rem;
+		letter-spacing: 0px;
+	}
+	#start p{
+		font-size: 1rem;
+		width: 80vw;
+		padding: 2vh 0;
+	}
+
+	#start a.btn1{
+		padding: 2vh 8vw;
+		border-radius: 10px;
+		margin-top: 10px;
+		letter-spacing: 1px;
+		font-size: .7rem;
+	}
+
 }
 
 @media (max-width: 576px){
@@ -253,5 +277,14 @@ header{
 	}
 	#textp{
 		margin-top: 150px;
+	}
+	#start h1{
+		font-size: 1.1rem;
+		letter-spacing: 0px;
+	}
+	#start p{
+		font-size: .6rem;
+		width: 90vw;
+		padding: 2vh 0;
 	}
 }
