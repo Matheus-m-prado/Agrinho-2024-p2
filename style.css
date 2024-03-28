@@ -10,7 +10,6 @@
 
 body{
 	font-family: "Montserrat", sans-serif;
-	height: 1000vh;
 }
 
 li{
@@ -163,6 +162,44 @@ header{
 	font-family: "Libre Baskerville", serif;
 	left: 0;
 	padding: 2vh 0;
+}
+#start{
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-top: 125px;
+	color: #303030;
+}
+#start h1{
+	text-wrap: nowrap;
+	font-size: 3.2rem;
+	font-family: "Libre Baskerville", serif;
+	letter-spacing: -3px;
+}
+#start p{
+	margin-top: 25px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	width: 150%;
+}
+
+#start a.btn1{
+	padding: 25px 60px;
+	border-radius: 10px;
+	margin-top: 40px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	background-color: #303030;
+	transition: all .3s ease;
+}
+#start a.btn1:hover{
+	background-color: #505050;
+	padding: 30px 65px;
+	border-radius: 20px;
 }
 
 
