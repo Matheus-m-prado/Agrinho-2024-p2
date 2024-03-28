@@ -1,0 +1,2 @@
+Fontes: Montserrat;  Libre Baskerville; (Merriweather).
+Cores padrão: #fff; #303030; #88fc04.

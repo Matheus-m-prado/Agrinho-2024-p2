@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   cursor: default;
+}
+
+body{
+	font-family: "Montserrat", sans-serif
 }
 
 li{
@@ -104,34 +111,38 @@ header{
 }
 
 /* MAIN */
-#hero{
-  background-image: linear-gradient(to bottom, #9bc4fb, #e0eeff);
-  height: 100vh;
-}
-.hero-img img{
+.hero {
   position: relative;
-  justify-content: middle;
-  top: -200px;
-  width: 2000px;
-  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  background-image: linear-gradient(to bottom, #afd2ff, #ffffff);
 }
-.hero-text{
-  top: 40%;
-  left: 50%;
+
+#text {
   position: absolute;
-  transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 999;
+  margin-bottom: 40vh;
+  font-size: 5em;
+  color: #303030;
+  transition: all 0.1s ease;
+  z-index: 100;
+	font-family: "Libre Baskerville", serif;
+	user-select: none;
 }
-.hero-text h1{
-  font-size: 3rem;
-}
-.hero-text p{
-  font-size: 1.5rem;
+.hero p {
+  font-size: 1.2rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: light;
+	letter-spacing: 2px;
 }
 
-
-
+.hero img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 
 
 
