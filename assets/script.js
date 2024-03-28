@@ -11,3 +11,15 @@ toggleBtn.onclick = function(){
 	? 'fa-solid fa-xmark'
 	: 'fa-solid fa-bars'
 }
+
+
+
+// PARALLAX
+let text = document.getElementById('ptext');
+
+// dando animação as imagens ao scrollar a tela
+window.addEventListener('scroll', () => {
+    let scroll = window.scrollY;
+
+    text.style.marginLeft = scroll * -.3 + 'px';
+});
