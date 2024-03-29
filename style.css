@@ -10,6 +10,7 @@
 
 body{
 	font-family: "Montserrat", sans-serif;
+	user-select: none;
 }
 
 li{
@@ -45,6 +46,10 @@ header{
 	left: 50%;
   transform: translateX(-50%);
 }
+#navbar .links a, 
+#navbar .logo a{
+	color: #303030;
+}
 
 #navbar .logo a{
 	font-size: 1.5rem;
@@ -66,7 +71,6 @@ header{
 	font-size: 1.5rem;
 	cursor: pointer;
 }
-
 .action-btn{
 	background-color: #509600;
 	color: #fff;
@@ -106,6 +110,9 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.dropdown-menu a{
+	color: #303030;
 }
 .dropdown-menu .action-btn{
 	width: 100%;

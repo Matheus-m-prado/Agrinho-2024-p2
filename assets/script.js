@@ -17,10 +17,12 @@ window.addEventListener('scroll', function(){
 	let scroll = window.scrollY;
 	if(scroll >= 10){
 		navbar.style.backdropFilter = 'blur(100px)';
+		navbar.style.background = '#ffffff61';
 		navbar.style.marginTop = '10px';
 		navbar.style.padding = '0 20px';
 	}else{
 		navbar.style.backdropFilter = 'blur(0px)';
+		navbar.style.background = 'none';
 		navbar.style.marginTop = '0px';
 		navbar.style.padding = '0';
 	}
@@ -34,7 +36,7 @@ let start2 = document.getElementById('textp');
 
 window.addEventListener('scroll', () => {
     let scroll = window.scrollY;
-		
+
     migracao.style.marginLeft = scroll * -.4 + 'px';
 		start.style.marginTop = scroll * .4 + 'px';
 		start2.style.marginTop = scroll * .4 + 'px';
