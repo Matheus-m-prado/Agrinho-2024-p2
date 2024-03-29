@@ -32,7 +32,7 @@ header{
 }
 #navbar{
 	position: absolute;
-	width: 100%;
+	width: 90%;
 	height: 60px;
 	max-width: 1200px;
 	margin: 0 auto;
@@ -42,6 +42,8 @@ header{
 	letter-spacing: 1px;
 	border-radius: 200px;
 	transition: all .5s ease;
+	left: 50%; /* Positions the navbar horizontally at the center */
+  transform: translateX(-50%);
 }
 
 #navbar .logo a{
@@ -211,7 +213,7 @@ header{
 	}
 	#navbar .toggle-btn{
 		display: block;
-		margin-right: 60px;
+		/* margin-right: 60px; */
 		z-index: 100000;
 	}
 	.dropdown-menu{
