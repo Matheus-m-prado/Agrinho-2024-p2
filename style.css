@@ -42,7 +42,7 @@ header{
 	letter-spacing: 1px;
 	border-radius: 200px;
 	transition: all .5s ease;
-	left: 50%; /* Positions the navbar horizontally at the center */
+	left: 50%;
   transform: translateX(-50%);
 }
 
