@@ -143,7 +143,6 @@ header{
 	margin-top: 20px;
 	letter-spacing: 2px;
 }
-
 .hero img {
   position: absolute;
   bottom: 0;
@@ -155,7 +154,7 @@ header{
 	overflow-x: hidden;
 }
 #parallax #ptext{
-	font-size: 5.5rem;
+	font-size: 6rem;
 	text-wrap: nowrap;
 	color: #303030;
 	/* font-family: 'Montserrat', sans-serif; */

@@ -35,6 +35,7 @@ let start2 = document.getElementById('textp');
 window.addEventListener('scroll', () => {
     let scroll = window.scrollY;
 
+
     migracao.style.marginLeft = scroll * -.4 + 'px';
 		start.style.marginTop = scroll * .4 + 'px';
 		start2.style.marginTop = scroll * .4 + 'px';
