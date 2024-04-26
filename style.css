@@ -11,6 +11,7 @@
 body{
 	font-family: "Montserrat", sans-serif;
 	user-select: none;
+	height: 1000vw;
 }
 
 li{
@@ -20,6 +21,17 @@ a{
 	text-decoration: none;
 	color: #fff;
 	cursor: pointer;
+}
+h2{
+	font-size: 3.3rem;
+	letter-spacing: 1px;
+	text-wrap: nowrap;
+	font-family: 'Libre Baskerville';
+}
+p{
+	font-size: 1.2rem;
+	font-family: 'Montserrat';
+	letter-spacing: -1px;
 }
 
 /* HEADER */
@@ -45,6 +57,13 @@ header{
 	transition: all .5s ease;
 	left: 50%;
   transform: translateX(-50%);
+}
+#navbar.active{
+	backdrop-filter: blur(100px);
+	background: #ffffff61;
+	margin-top: 10px;
+	padding: 0 20px;
+	width: 90vw;
 }
 #navbar .links a, 
 #navbar .logo a{
@@ -168,48 +187,88 @@ header{
 	color: #303030;
 	/* font-family: 'Montserrat', sans-serif; */
 	font-family: "Libre Baskerville", serif;
-	left: 0;
+	/* left: 0; */
 	padding: 2vh 0;
 }
-#start{
+
+
+#topico{
 	display: flex;
 	flex-direction: column;
-	width: 40%;
+	width: 30%;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	padding: 125px 40px;
+	padding: 0 0 125px 0;
 	color: #303030;
 }
-#start h1{
+#topico h1{
 	text-wrap: nowrap;
 	font-size: 3.2rem;
 	font-family: "Libre Baskerville", serif;
 	letter-spacing: -3px;
 }
-#start p{
+#topico p{
 	/* margin-top: 25px; */
 	padding: 3vh 0;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2rem;
 	width: 180%;
 }
+#topico a.btn2{
+	color: #303030;
+	font-size: 1.2rem;
+	font-weight: 600;
+	padding: 15px 0 10px 0;
+	position: relative;
+	transition: all .6s ease;
+}
+#topico a.btn2:hover{
+	padding: 15px 0 5px 0;
+}
+#topico a.btn2::before{
+	content: "";
+  position: absolute;
+	left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+	border-radius: 100px;
+  background-color: #404040;
+}
 
-#start a.btn1{
-	padding: 4vh 5.5vw;
-	border-radius: 10px;
-	font-weight: bold;
-	letter-spacing: 1px;
-	background-color: #303030;
-	transition: all .3s ease;
-	text-wrap: nowrap;
+.padrao01{
+	color: #303030;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	flex-direction: column;
+	width: 70%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
-#start a.btn1:hover{
-	background-color: #505050;
-	scale: 1.1;
-	border-radius: 20px;
+#info01{
+	padding: 10vw 0;
 }
+.padrao01 p{
+	padding: 3vh 8vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* RESPONSIVDADE */
@@ -227,7 +286,7 @@ header{
 		display: block;
 	}
 	.hero-content__p,
-	.button-start{
+	.button{
 		font-size: 1rem;
 	}
 	.hero-content h1{
@@ -247,29 +306,6 @@ header{
 	#parallax #ptext{
 		font-size: 4rem;
 	}
-
-	#start{
-		width: 40%;
-		padding: 60px 0px;
-	}
-	#start h1{
-		font-size: 2rem;
-		letter-spacing: 0px;
-	}
-	#start p{
-		font-size: 1rem;
-		width: 80vw;
-		padding: 2vh 0;
-	}
-
-	#start a.btn1{
-		padding: 2vh 8vw;
-		border-radius: 10px;
-		margin-top: 10px;
-		letter-spacing: 1px;
-		font-size: .7rem;
-	}
-
 }
 
 @media (max-width: 576px){
@@ -286,13 +322,50 @@ header{
 	#textp{
 		margin-top: 150px;
 	}
-	#start h1{
+	#topico h1{
 		font-size: 1.1rem;
 		letter-spacing: 0px;
 	}
-	#start p{
-		font-size: .6rem;
+	#topico p{
+		font-size: .6em;
 		width: 90vw;
 		padding: 2vh 0;
 	}
+}
+
+
+
+
+/* BOTÕES */
+.btn01{
+	padding: 20px 65px;
+	border-radius: 10px;
+	background-color: #303030;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 1px;
+	transition: all .2s ease;
+}
+.btn01:hover{
+	padding: 25px 60px;
+	letter-spacing: 0;
+}
+.btn01:active{
+	scale: 0.9;
+}
+
+
+.btn02{
+	text-decoration: underline 3px #303030;
+	color: #303030;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-top: 10px;
+	transition: all .2s ease;
+}
+.btn02:hover{
+	letter-spacing: 2px;
+}
+.btn02:active{
+	scale: 0.9;
 }

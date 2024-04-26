@@ -16,15 +16,17 @@ window.addEventListener('scroll', function(){
 	const navbar = document.getElementById('navbar');
 	let scroll = window.scrollY;
 	if(scroll >= 10){
-		navbar.style.backdropFilter = 'blur(100px)';
-		navbar.style.background = '#ffffff61';
-		navbar.style.marginTop = '10px';
-		navbar.style.padding = '0 20px';
+		// navbar.style.backdropFilter = 'blur(100px)';
+		// navbar.style.background = '#ffffff61';
+		// navbar.style.marginTop = '10px';
+		// navbar.style.padding = '0 20px';
+		navbar.classList.add('active');
 	}else{
-		navbar.style.backdropFilter = 'blur(0px)';
-		navbar.style.background = 'none';
-		navbar.style.marginTop = '0px';
-		navbar.style.padding = '0';
+		// navbar.style.backdropFilter = 'blur(0px)';
+		// navbar.style.background = 'none';
+		// navbar.style.marginTop = '0px';
+		// navbar.style.padding = '0';
+		navbar.classList.remove('active');
 	}
 });
 
@@ -38,6 +40,4 @@ window.addEventListener('scroll', () => {
     let scroll = window.scrollY;
 
     migracao.style.marginLeft = scroll * -.4 + 'px';
-		start.style.marginTop = scroll * .4 + 'px';
-		start2.style.marginTop = scroll * .4 + 'px';
 });
