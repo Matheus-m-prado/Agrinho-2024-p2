@@ -41,3 +41,10 @@ window.addEventListener('scroll', () => {
 
     migracao.style.marginLeft = scroll * -.4 + 'px';
 });
+
+
+// ACTIVE
+let item = document.getElementById("item");
+item.addEventListener('click', function(){
+		this.classList.add('active');
+});

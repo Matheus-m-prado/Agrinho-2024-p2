@@ -11,7 +11,6 @@
 body{
 	font-family: "Montserrat", sans-serif;
 	user-select: none;
-	height: 1000vw;
 }
 
 li{
@@ -256,10 +255,66 @@ header{
 	padding: 3vh 8vw;
 }
 
-
-
-
-
+#selecao{
+	background-image: url("assets/img/espaco_aberto.jpg");
+	background-size: cover;
+	height: 100vh;
+	/* padding: 15vw; */
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin: 100px 0;
+}
+#selecao .card{
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 20px;
+	display: flex;
+}
+#selecao .card #item{
+	display: flex;
+	margin: 2vh 0;
+	gap: 1vw;
+	align-items: center;
+	padding: 5px;
+	transition: all .2s ease;
+}
+#selecao .card #item, #item i, #item .text{
+	cursor: pointer;
+}
+.active{
+	background-color: rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+}
+#selecao .card .textos #item.active i{
+	background-color: #332424;
+	color: #fff;
+}
+#selecao .card #item i{
+	padding: 30px;
+	min-width: 6vw;
+	border-radius: 10px;
+	background-color: #f8f4ec;
+	text-align: center;
+	transition: all .3s ease;
+}
+#selecao .card .textos{
+	margin-right: 3vw;
+}
+#selecao .card .text{
+	font-size: 1.3rem;
+	letter-spacing: -1px;
+}
+#selecao .card img.lateral{
+	width: 25vw;
+	object-fit: cover;
+	border-radius: 10px;
+}
+#selecao h1{
+	font-family: 'Libre Baskerville';
+	font-size: 1.9rem;
+	margin-bottom: 40px;
+}
 
 
 
@@ -368,4 +423,19 @@ header{
 }
 .btn02:active{
 	scale: 0.9;
+}
+
+
+
+
+
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #303030;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #fff;  /* creates padding around scroll thumb */
 }
