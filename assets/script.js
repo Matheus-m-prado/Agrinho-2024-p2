@@ -44,7 +44,3 @@ window.addEventListener('scroll', () => {
 
 
 // ACTIVE
-let item = document.getElementById("item");
-item.addEventListener('click', function(){
-		this.classList.add('active');
-});
